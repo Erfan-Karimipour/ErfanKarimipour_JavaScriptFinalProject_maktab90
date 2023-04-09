@@ -1,13 +1,13 @@
 `use strict`
 
-import { EyeIconChanger } from "../Modules/EyeIconChanger/EyeIconChanger.js";
-import { InputBorderChanger } from "../Modules/InputBorderChanger/InputBorderChanger.js";
-import { rememberUser } from "../Modules/RememberUser/RememberUser.js";
-import { submitBtnDisable } from "../Modules/SubmitBtnDisable/SubmitBtnDisable.js";
-import { loginToAccount } from "../Modules/LoginToAccount/LoginToAccount.js";
-import { loggedIn } from "../Modules/LoginStatus/LoggedIn.js";
-import { loggedOut } from "../Modules/LoginStatus/LoggedOut.js";
-import { logginStatusCheck } from "../Modules/LoginStatus/LoginStatusCheck.js";
+import { EyeIconChanger } from "../../Modules/EyeIconChanger/EyeIconChanger.js";
+import { InputBorderChanger } from "../../Modules/InputBorderChanger/InputBorderChanger.js";
+import { rememberUser } from "../../Modules/RememberUser/RememberUser.js";
+import { submitBtnDisable } from "../../Modules/SubmitBtnDisable/SubmitBtnDisable.js";
+import { loginToAccount } from "../../Modules/LoginToAccount/LoginToAccount.js";
+import { loggedIn } from "../../Modules/LoginStatus/LoggedIn.js";
+import { loggedOut } from "../../Modules/LoginStatus/LoggedOut.js";
+import { logginStatusCheck } from "../../Modules/LoginStatus/LoginStatusCheck.js";
 
 const body = document.querySelector(`body`);
 const emailInput = document.getElementById(`emailInput`);

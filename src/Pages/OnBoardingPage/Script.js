@@ -1,4 +1,4 @@
-import {checkOnBoardingPageWatched} from '../Modules/checkOnBoardingPageWatched/OnBoardingPageWatched.js'
+import {checkOnBoardingPageWatched} from '../../Modules/checkOnBoardingPageWatched/OnBoardingPageWatched.js'
 
 const loadingPage = document.querySelector(`.LoadingPage`);
 const boarding2 = document.querySelector(`.boarding2`);

@@ -1,9 +1,9 @@
 `use strict`
 
-import { registerANewAccount } from "../Modules/RegisterANewAccount/registerANewAccount.js";
-import { EyeIconChanger } from "../Modules/EyeIconChanger/EyeIconChanger.js";
-import { InputBorderChanger } from "../Modules/InputBorderChanger/InputBorderChanger.js";
-import { submitBtnDisable } from "../Modules/SubmitBtnDisable/SubmitBtnDisable.js";
+import { registerANewAccount } from "../../Modules/RegisterANewAccount/registerANewAccount.js";
+import { EyeIconChanger } from "../../Modules/EyeIconChanger/EyeIconChanger.js";
+import { InputBorderChanger } from "../../Modules/InputBorderChanger/InputBorderChanger.js";
+import { submitBtnDisable } from "../../Modules/SubmitBtnDisable/SubmitBtnDisable.js";
 
 const body = document.querySelector(`body`);
 const emailInput = document.getElementById(`emailInput`);

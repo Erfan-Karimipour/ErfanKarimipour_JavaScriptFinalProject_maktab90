@@ -7,6 +7,7 @@
     <title>Shoe | Home Page</title>
     <link rel="stylesheet" href="../../../dist/output.css">
     <link rel="stylesheet" href="../../Style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 </head>
 <body>
     <header>
@@ -23,20 +24,108 @@
                 <ion-icon name="heart-outline" class="h-full align-bottom ml-3 mr-5 cursor-pointer"></ion-icon>
             </div>
         </header>
-        <main class="m-5 mt-2">
-            <div class="bg-gray-100 flex h-10 p-2 px-3">
-                <ion-icon name="search-outline" class="text-gray-500 h-full align-middle text-2xl mr-2"></ion-icon>
-                <input type="search" placeholder="Search" class="outline-none w-full bg-gray-100 mt-1 text-gray-600">
-            </div>
-            <div>
-                
-            </div>
-        </main>
+        <footer class="bg-gray-100 flex h-10 p-2 px-3 border-b-2 mx-3 rounded-sm">
+            <ion-icon name="search-outline" class="text-gray-500 h-full align-middle text-2xl mr-2"></ion-icon>
+            <input type="search" placeholder="Search" class="outline-none w-full bg-gray-100 mt-1 text-gray-600">
+        </footer>
+
+
     </header>
 
+    <main class="overflow-y-scroll Nav scrollHider pt-1">
+        <main class="mx-5 my-1">
+            <div class="grid grid-rows-2 grid-cols-4 gap-8 gap-y-4 mt-2 p-2 text-gray-600">
+                <button>
+                    <img src="https://img.icons8.com/windows/32/null/nike.png" class="bg-gray-200 p-4 rounded-full w-full"/>
+                    <p class="text-center mt-3 font-extrabold text-sm">Nike</p>
+                </button>
+                <button>
+                    <img src="https://img.icons8.com/external-tal-revivo-filled-tal-revivo/24/000000/external-adidas-a-multinational-corporation-that-designs-and-manufactures-shoes-clothing-and-accessories-fashion-filled-tal-revivo.png" class="bg-gray-200 p-4 rounded-full w-full"/>
+                    <p class="text-center mt-3 font-extrabold text-sm">Adidas</p>
+                </button>
+                <button>
+                    <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/000000/external-puma-a-german-multinational-company-designs-and-manufactures-athletic-and-casual-footwear-apparel-and-accessories-fashion-color-tal-revivo.png" class="bg-gray-200 p-4 rounded-full w-full"/>
+                    <p class="text-center mt-3 font-extrabold text-sm">Puma</p>
+                </button>
+                <button>
+                    <img src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/24/null/external-asicstiger-a-lifestyle-brand-in-the-fusion-of-japanese-heritage-and-modern-fashion-bold-tal-revivo.png" class="bg-gray-200 p-4 rounded-full w-full"/>
+                    <p class="text-center mt-3 font-extrabold text-sm">Asics</p>
+                </button>
+                <button>
+                    <img src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/24/null/external-asicstiger-a-lifestyle-brand-in-the-fusion-of-japanese-heritage-and-modern-fashion-regular-tal-revivo.png" class="bg-gray-200 p-4 rounded-full w-full"/>
+                    <p class="text-center mt-3 font-extrabold text-sm">Reebok</p>
+                </button>
+                <button>
+                    <img src="https://img.icons8.com/ios-glyphs/30/null/basketball--v1.png" class="bg-gray-200 p-4 rounded-full w-full"/>
+                    <p class="text-center mt-3 font-extrabold text-sm">New B..</p>
+                </button>
+                <button>
+                    <img src="https://img.icons8.com/external-others-inmotus-design/67/null/external-Converse-identity-of-brands-others-inmotus-design.png" class="bg-gray-200 p-4 rounded-full w-full"/>
+                    <p class="text-center mt-3 font-extrabold text-sm">Converse</p>
+                </button>
+                <button>
+                    <img src="https://img.icons8.com/windows/32/null/connection-status-off.png" class="bg-gray-200 p-4 rounded-full w-full"/>
+                    <p class="text-center mt-3 font-extrabold text-sm">More...</p>
+                </button>
+            </div>
+        </main>
+        <header class="flex justify-between px-5">
+            <p class="text-xl font-bold">Most popular</p>
+            <button class="font-bold mt-1">See all</button>
+        </header>
+        <div class="overflow-x-scroll text-white flex p-3 scrollHider">
+            <p class="mx-1 px-5 py-2 pb-1 bg-black bg-opacity-80 rounded-full">All</p>
+            <p class="mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">Nike</p>
+            <p class="mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">Adidas</p>
+            <p class="mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">Puma</p>
+            <p class="mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">Asics</p>
+            <p class="mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">Reebok</p>
+            <p class="mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">New..</p>
+            <p class="mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">Converse</p>
+        </div>
+        <main class="p-3 px-4 grid grid-cols-2 gap-2 gap-y-4 ShoeList">
 
+        </main>
+    </main>
 
+    <footer class="grid grid-cols-5 border-t-2">
+        <button class="flex flex-col pt-3">
+            <ion-icon name="home" class="text-3xl m-auto"></ion-icon>
+            <p class="font-bold text-ssm text-center w-full">Home</p>
+        </button>
+        <button class="flex flex-col pt-3">
+            <ion-icon name="bag-outline" class="text-3xl m-auto"></ion-icon>
+            <p class="font-bold text-ssm text-center w-full">Cart</p>
+        </button>
+        <button class="flex flex-col pt-3">
+            <ion-icon name="cart-outline" class="text-3xl m-auto"></ion-icon>
+            <p class="font-bold text-ssm text-center w-full">Orders</p>
+        </button>
+        <button class="flex flex-col pt-3">
+            <ion-icon name="wallet-outline" class="text-3xl m-auto"></ion-icon>
+            <p class="font-bold text-ssm text-center w-full">Wallet</p>
+        </button>
+        <button class="flex flex-col pt-3">
+            <ion-icon name="person-outline" class="text-3xl m-auto"></ion-icon>
+            <p class="font-bold text-ssm text-center w-full">Profile</p>
+        </button>
+    </footer>
+
+<div class="hidden">
+    
+    
+    
+    <a target="_blank" href="https://icons8.com/icon/33951/view-more">View More icon by Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/KOXhndQxB8Zq/converse">Converse icon by Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/70862/basketball">Basketball icon by Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/RqQZlmiQioPW/asicstiger-a-lifestyle-brand-in-the-fusion-of-japanese-heritage-and-modern">Asicstiger a lifestyle brand in the fusion of Japanese heritage and modern icon by Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/XsYIhomqfMs7/asicstiger-a-lifestyle-brand-in-the-fusion-of-japanese-heritage-and-modern">Asicstiger a lifestyle brand in the fusion of Japanese heritage and modern icon by Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/WuyXUAWvAEjM/puma-a-german-multinational-company---designs-and-manufactures-athletic-and-casual-footwear,-apparel-and-accessories">Puma a german multinational company - designs and manufactures athletic and casual footwear, apparel and accessories icon by Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/16642/nike">Nike icon by Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/zlaC0GAxwyI7/adidas-a-multinational-corporation-that-designs-and-manufactures-shoes,-clothing-and-accessories.">Adidas a multinational corporation that designs and manufactures shoes, clothing and accessories. icon by Icons8</a></div>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="Script.js" type="module"></script>
 </body>
 </html>

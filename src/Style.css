@@ -7,3 +7,19 @@
 *{
     font-family: 'Comfortaa', cursive;
 }
+.scrollHider::-webkit-scrollbar {
+    display: none;
+}
+.scrollHider{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.Nav{
+    height: 78vh;
+}
+.text-ssm{
+    font-size: 10px;
+}
+.w-shoeImg{
+    height: 11rem;
+}

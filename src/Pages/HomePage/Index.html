@@ -34,36 +34,36 @@
 
     <main class="overflow-y-scroll Nav scrollHider pt-1">
         <main class="mx-5 my-1">
-            <div class="grid grid-rows-2 grid-cols-4 gap-8 gap-y-4 mt-2 p-2 text-gray-600">
-                <button>
+            <div class="grid grid-rows-2 grid-cols-4 gap-8 gap-y-4 mt-2 p-2 text-gray-600 companys">
+                <button class="companyBtn">
                     <img src="https://img.icons8.com/windows/32/null/nike.png" class="bg-gray-200 p-4 rounded-full w-full"/>
                     <p class="text-center mt-3 font-extrabold text-sm">Nike</p>
                 </button>
-                <button>
+                <button class="companyBtn">
                     <img src="https://img.icons8.com/external-tal-revivo-filled-tal-revivo/24/000000/external-adidas-a-multinational-corporation-that-designs-and-manufactures-shoes-clothing-and-accessories-fashion-filled-tal-revivo.png" class="bg-gray-200 p-4 rounded-full w-full"/>
                     <p class="text-center mt-3 font-extrabold text-sm">Adidas</p>
                 </button>
-                <button>
+                <button class="companyBtn">
                     <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/000000/external-puma-a-german-multinational-company-designs-and-manufactures-athletic-and-casual-footwear-apparel-and-accessories-fashion-color-tal-revivo.png" class="bg-gray-200 p-4 rounded-full w-full"/>
                     <p class="text-center mt-3 font-extrabold text-sm">Puma</p>
                 </button>
-                <button>
+                <button class="companyBtn">
                     <img src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/24/null/external-asicstiger-a-lifestyle-brand-in-the-fusion-of-japanese-heritage-and-modern-fashion-bold-tal-revivo.png" class="bg-gray-200 p-4 rounded-full w-full"/>
                     <p class="text-center mt-3 font-extrabold text-sm">Asics</p>
                 </button>
-                <button>
+                <button class="companyBtn">
                     <img src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/24/null/external-asicstiger-a-lifestyle-brand-in-the-fusion-of-japanese-heritage-and-modern-fashion-regular-tal-revivo.png" class="bg-gray-200 p-4 rounded-full w-full"/>
                     <p class="text-center mt-3 font-extrabold text-sm">Reebok</p>
                 </button>
-                <button>
+                <button class="companyBtn">
                     <img src="https://img.icons8.com/ios-glyphs/30/null/basketball--v1.png" class="bg-gray-200 p-4 rounded-full w-full"/>
                     <p class="text-center mt-3 font-extrabold text-sm">New B..</p>
                 </button>
-                <button>
+                <button class="companyBtn">
                     <img src="https://img.icons8.com/external-others-inmotus-design/67/null/external-Converse-identity-of-brands-others-inmotus-design.png" class="bg-gray-200 p-4 rounded-full w-full"/>
                     <p class="text-center mt-3 font-extrabold text-sm">Converse</p>
                 </button>
-                <button>
+                <button class="companyBtn">
                     <img src="https://img.icons8.com/windows/32/null/connection-status-off.png" class="bg-gray-200 p-4 rounded-full w-full"/>
                     <p class="text-center mt-3 font-extrabold text-sm">More...</p>
                 </button>
@@ -73,7 +73,7 @@
             <p class="text-xl font-bold">Most popular</p>
             <button class="font-bold mt-1">See all</button>
         </header>
-        <div class="overflow-x-scroll text-white flex p-3 scrollHider">
+        <div class="overflow-x-scroll text-white bg-red-500 flex p-3 scrollHider">
             <p class="mx-1 px-5 py-2 pb-1 bg-black bg-opacity-80 rounded-full">All</p>
             <p class="mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">Nike</p>
             <p class="mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">Adidas</p>
@@ -110,6 +110,14 @@
             <p class="font-bold text-ssm text-center w-full">Profile</p>
         </button>
     </footer>
+
+    <section class="w-screen h-full absolute bg-white FilterPage duration-150">
+        <button class="font-bold text-xl w-full text-left backdrop-blur-2xl closeFilter"><ion-icon name="arrow-back-outline" class="align-middle ml-5 mr-2 my-3"></ion-icon><span class="FilteredName align-middle text-slate-900">Test</span></button>
+        <div class="FilteredShoeListNav overflow-y-scroll">
+            <div class="p-3 px-4 grid grid-cols-2 gap-2 gap-y-4 FilteredShoeList">
+            </div>
+        </div>
+    </section>
 
 <div class="hidden">
     

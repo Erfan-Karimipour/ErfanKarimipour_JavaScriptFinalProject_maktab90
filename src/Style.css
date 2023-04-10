@@ -23,3 +23,9 @@
 .w-shoeImg{
     height: 11rem;
 }
+.FilteredShoeListNav{
+    height: 50rem;
+}
+.FilterPage{
+    top: -100%;
+}

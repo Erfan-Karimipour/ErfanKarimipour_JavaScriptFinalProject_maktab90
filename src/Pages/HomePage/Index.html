@@ -26,7 +26,9 @@
         </header>
         <footer class="bg-gray-100 flex h-10 p-2 px-3 border-b-2 mx-3 rounded-sm">
             <ion-icon name="search-outline" class="text-gray-500 h-full align-middle text-2xl mr-2"></ion-icon>
-            <input type="search" placeholder="Search" class="outline-none w-full bg-gray-100 mt-1 text-gray-600">
+            <input type="search" placeholder="Search" class="search outline-none w-full bg-gray-100 mt-1 text-gray-600">
+            <div class="searchBar w-80 absolute bg-gray-50 border-2 border-t-0 rounded-sm border-gray-400 top-searchBar">
+            </div>
         </footer>
 
 
@@ -73,7 +75,7 @@
             <p class="text-xl font-bold">Most popular</p>
             <button class="font-bold mt-1">See all</button>
         </header>
-        <div class="overflow-x-scroll text-white bg-red-500 flex p-3 scrollHider">
+        <div class="overflow-x-scroll text-white flex p-3 scrollHider">
             <p class="mx-1 px-5 py-2 pb-1 bg-black bg-opacity-80 rounded-full">All</p>
             <p class="mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">Nike</p>
             <p class="mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">Adidas</p>
@@ -112,7 +114,7 @@
     </footer>
 
     <section class="w-screen h-full absolute bg-white FilterPage duration-150">
-        <button class="font-bold text-xl w-full text-left backdrop-blur-2xl closeFilter"><ion-icon name="arrow-back-outline" class="align-middle ml-5 mr-2 my-3"></ion-icon><span class="FilteredName align-middle text-slate-900">Test</span></button>
+        <button class="font-bold text-xl w-full text-left backdrop-blur-2xl closeFilter"><ion-icon name="arrow-back-outline" class="align-middle ml-5 mr-2 my-3"></ion-icon><span class="FilteredName align-middle text-slate-900"></span></button>
         <div class="FilteredShoeListNav overflow-y-scroll">
             <div class="p-3 px-4 grid grid-cols-2 gap-2 gap-y-4 FilteredShoeList">
             </div>

@@ -29,3 +29,8 @@
 .FilterPage{
     top: -100%;
 }
+.top-searchBar{
+    top: 7.4rem;
+    left: 50%;
+    transform: translate(-50%,0);
+}

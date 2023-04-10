@@ -7,6 +7,7 @@
     <title>Shoe | Home Page</title>
     <link rel="stylesheet" href="../../../dist/output.css">
     <link rel="stylesheet" href="../../Style.css">
+    <script src="LoginChecker.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 </head>
 <body>
@@ -27,11 +28,9 @@
         <footer class="bg-gray-100 flex h-10 p-2 px-3 border-b-2 mx-3 rounded-sm">
             <ion-icon name="search-outline" class="text-gray-500 h-full align-middle text-2xl mr-2"></ion-icon>
             <input type="search" placeholder="Search" class="search outline-none w-full bg-gray-100 mt-1 text-gray-600">
-            <div class="searchBar w-80 absolute bg-gray-50 border-2 border-t-0 rounded-sm border-gray-400 top-searchBar">
+            <div class="searchBar hidden w-80 absolute bg-gray-50 border-2 border-t-0 rounded-sm border-gray-400 top-searchBar">
             </div>
         </footer>
-
-
     </header>
 
     <main class="overflow-y-scroll Nav scrollHider pt-1">

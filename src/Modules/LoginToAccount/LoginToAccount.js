@@ -11,11 +11,12 @@ if (!allAccounts){
 export function loginToAccount(remember){
     allAccounts.forEach(element => {
         if(element.Email == emailInput.value && element.Password == passwordInput.value){
-            console.log(`Logged In!`);
             if (JSON.parse(localStorage.getItem(`Remember`))){
                 localStorage.setItem(`SavedEmail`, JSON.stringify(emailInput.value));
             }
             loggedIn();
+            console.log(`s`);
+            window.open(`../HomePage/Index.html`, `_self`);
         }
     });
 }

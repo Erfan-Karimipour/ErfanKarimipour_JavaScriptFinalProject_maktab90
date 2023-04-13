@@ -11,6 +11,8 @@ export function FilterLister () {
             res = res.data;
             res.forEach(element => {
                 let div = document.createElement(`div`);
+                div.setAttribute(`onclick`, `productOnClick(event)`);
+                div.setAttribute(`id`, element.id);       
                 div.className = `w-full overflow-hidden text-ellipsis`;
                 div.innerHTML = `
                 <img src=${element.images} alt="Shoe" class="p-4 bg-gray-200 rounded-2xl mb-2 w-shoeImg w-full">

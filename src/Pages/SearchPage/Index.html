@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe | Home Page</title>
+    <link rel="stylesheet" href="../../../dist/output.css">
+    <link rel="stylesheet" href="../../Style.css">
+    <script src="../../Modules/LoginChecker/LoginChecker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="m-5 mt-6 text-2xl">
+            <ion-icon name="search-outline" class="absolute top-9 left-8"></ion-icon>
+            <input type="search" class="w-full h-12 pl-10 pr-9 rounded-xl text-base bg-gray-100 search outline-black">
+            <ion-icon name="grid-outline" class="absolute top-9 right-8"></ion-icon>
+        </div>
+        <div class="flex justify-between mx-6 pb-4">
+            <p class="text-xl font-bold">Recent</p>
+            <button class="font-bold clearAll">Clear All</button>
+        </div>
+        <div class="flex justify-between mx-6 pb-4 hidden">
+            <p class="text-xl font-bold searched"></p>
+            <span class="font-bold counter"></span>
+        </div>
+    </header>
+    
+    <div class="searchHistory mx-6 border-t-2 ">
+    
+    </div>
+    <main class="p-3 px-4 grid grid-cols-2 gap-2 gap-y-4 ShoeList">
+
+    </main>
+    <div class="absolute absoluteCenter w-full hidden notFound">
+            <p class="flex justify-around">
+            <img src="https://img.icons8.com/dotty/80/null/terms-and-conditions.png" class="flex justify-around w-60"/></p>
+            <p class="text-xl font-extrabold flex justify-around m-2">Not Found</p>
+            <p class="flex justify-around text-center">Sorry, the keyword you entered cannot be found, please check again or search with another keyword.</p>
+ 
+    </div>
+
+
+    <a target="_blank" href="https://icons8.com/icon/105274/terms-and-conditions" class="hidden">Terms and Conditions icon by Icons8</a>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="Script.js" type="module"></script>
+    <script src="../../Modules/ProductOnclick/ProductOnclick.js"></script>
+</body>
+</html>
+
+
+
+
+
+

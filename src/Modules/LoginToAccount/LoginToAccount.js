@@ -15,8 +15,8 @@ export function loginToAccount(remember){
                 localStorage.setItem(`SavedEmail`, JSON.stringify(emailInput.value));
             }
             loggedIn();
-            console.log(`s`);
             window.open(`../HomePage/Index.html`, `_self`);
+            localStorage.setItem(`CurrentUser`, JSON.stringify(element.Email));
         }
     });
 }

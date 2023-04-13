@@ -7,7 +7,7 @@
     <title>Shoe | Home Page</title>
     <link rel="stylesheet" href="../../../dist/output.css">
     <link rel="stylesheet" href="../../Style.css">
-    <script src="LoginChecker.js"></script>
+    <script src="../../Modules/LoginChecker/LoginChecker.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 </head>
 <body>
@@ -21,16 +21,17 @@
                 </div>
             </div>
             <div class="flex text-3xl text-gray-700 h-full align-bottom">
-                <ion-icon name="notifications-outline" class="h-full align-bottom cursor-pointer"></ion-icon>
-                <ion-icon name="heart-outline" class="h-full align-bottom ml-3 mr-5 cursor-pointer"></ion-icon>
+                
+                <form action="../WishListPage/Index.html" class="mt-6 h-full align-bottom cursor-pointer"> <button> <ion-icon name="notifications-outline" ></ion-icon></button></form>
+                <form action="../WishListPage/Index.html" class="mt-6 h-full align-bottom ml-3 mr-5 cursor-pointer"> <button> <ion-icon name="heart-outline" ></ion-icon></button></form>
             </div>
         </header>
-        <footer class="bg-gray-100 flex h-10 p-2 px-3 border-b-2 mx-3 rounded-sm">
+        <form class="bg-gray-100 flex h-10 p-2 px-3 border-b-2 mx-3 rounded-sm">
             <ion-icon name="search-outline" class="text-gray-500 h-full align-middle text-2xl mr-2"></ion-icon>
             <input type="search" placeholder="Search" class="search outline-none w-full bg-gray-100 mt-1 text-gray-600">
             <div class="searchBar hidden w-80 absolute bg-gray-50 border-2 border-t-0 rounded-sm border-gray-400 top-searchBar">
             </div>
-        </footer>
+        </form>
     </header>
 
     <main class="overflow-y-scroll Nav scrollHider pt-1">
@@ -72,17 +73,17 @@
         </main>
         <header class="flex justify-between px-5">
             <p class="text-xl font-bold">Most popular</p>
-            <button class="font-bold mt-1">See all</button>
+            <form action="../MostPopularPage/Index.html" class="font-bold mt-1"><button>See all</button></form>
         </header>
-        <div class="overflow-x-scroll text-white flex p-3 scrollHider">
-            <p class="mx-1 px-5 py-2 pb-1 bg-black bg-opacity-80 rounded-full">All</p>
-            <p class="mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">Nike</p>
-            <p class="mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">Adidas</p>
-            <p class="mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">Puma</p>
-            <p class="mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">Asics</p>
-            <p class="mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">Reebok</p>
-            <p class="mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">New..</p>
-            <p class="mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">Converse</p>
+        <div class="overflow-x-scroll text-white flex p-3 scrollHider filterBtns">
+            <button class="filterBtn mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full selectedFilter">All</button>
+            <button class="filterBtn mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">Nike</button>
+            <button class="filterBtn mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">Adidas</button>
+            <button class="filterBtn mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">Puma</button>
+            <button class="filterBtn mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">Asics</button>
+            <button class="filterBtn mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">Reebok</button>
+            <button class="filterBtn mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">New..</button>
+            <button class="filterBtn mx-1 px-5 py-2 pb-1 text-black border-2 border-black font-semibold opacity-80 rounded-full">Converse</button>
         </div>
         <main class="p-3 px-4 grid grid-cols-2 gap-2 gap-y-4 ShoeList">
 
@@ -136,5 +137,6 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="Script.js" type="module"></script>
+    <script src="../../Modules/ProductOnclick/ProductOnclick.js"></script>
 </body>
 </html>

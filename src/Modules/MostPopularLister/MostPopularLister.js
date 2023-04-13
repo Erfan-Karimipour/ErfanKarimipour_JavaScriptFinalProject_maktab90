@@ -1,8 +1,8 @@
-export function shoeLister() {  
-    const shoeList = document.querySelector(`.ShoeList`);
-    axios.get('http://localhost:3000/Shoes',{
+export function mostPopularLister () {
+    const filteredShoeList = document.querySelector(`.FilteredShoeList`);
+    axios.get(`http://localhost:3000/Shoes?mostPopular=true`,{
     }).then(res => { 
-        res = res.data; 
+        res = res.data;
         res.forEach(element => {
             let div = document.createElement(`div`);
             div.setAttribute(`onclick`, `productOnClick(event)`);
@@ -13,9 +13,7 @@ export function shoeLister() {
             <span class="text-xl font-bold mb-2 whitespace-nowrap">${element.title}</span>
             <p class="font-bold">$ ${element.price}</p>
             `;
-            
-            shoeList.append(div);
-    
+            filteredShoeList.append(div);
         });
     });
 }

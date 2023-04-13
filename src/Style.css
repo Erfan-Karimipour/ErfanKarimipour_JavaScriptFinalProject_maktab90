@@ -34,3 +34,15 @@
     left: 50%;
     transform: translate(-50%,0);
 }
+.MostPopularShoeListNav{
+    height: 46rem;
+}
+.selectedFilter{
+    background-color: black;
+    color: #fafafa;
+}
+.absoluteCenter{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

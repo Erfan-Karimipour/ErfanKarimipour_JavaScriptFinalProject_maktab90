@@ -30,7 +30,6 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.swiper-button-nextt',
       disabledClass: `notHappening`,
     },
-
 });
 
 function jesus (){

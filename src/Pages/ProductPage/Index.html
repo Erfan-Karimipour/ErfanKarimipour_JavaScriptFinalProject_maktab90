@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shoea | Product</title>
+        <link rel="stylesheet" href="../../../dist/output.css">
+        <link rel="stylesheet" href="../../Style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="Style.css">
+        <script src="../../Modules/LoginChecker/LoginChecker.js"></script>
+    </head>
+<body>
+  
+  <header class="bg-gray-100">
+    <button class="mt-2 mx-4 exitBtn"><ion-icon name="arrow-back-outline" class="text-2xl"></ion-icon></button>
+    <div class="swiper h-swiper">
+      <div class="swiper-wrapper">
+      </div>
+      <div class="swiper-paginationn flex justify-center pb-4"></div>
+      </div>
+    </div>
+  </header>
+  <main class="px-6 mt-2">
+    <div class="flex justify-between">
+    <span class="productName text-xxl font-bold"></span><ion-icon name="heart-outline" class="addToWish text-3xl mt-1"></ion-icon><ion-icon name="heart" class="removeFromWish text-3xl mt-1 hidden"></ion-icon></div>
+    <div class="flex text-center border-b-2 border-gray-150 pb-4">
+      <p class="bg-gray-200 rounded-md px-3 py-1 text-sm text-gray-600 self-center">5,371 sold</p>
+      <ion-icon name="star-half-outline" class="align-bottom self-center text-2xl ml-3 mr-1"></ion-icon>
+      <p class="text-sm text-gray-500 py-1">4.3 (561,025 reviews)</p>
+    </div>
+
+    <section>
+      <p class="font-extrabold my-2">Description</p>
+      <p class="text-sm mb-2">Lorem ipsum dolor sit amet consectetur elit. Nihil doloribus sequi ipsum eos</p>
+    </section>
+    <section class="grid grid-cols-2">
+      <div class="size">
+        <p class="font-extrabold mb-1">Size</p>
+        <button class="sizes text-gray-600 w-10 h-10 border-2 border-gray-500 rounded-full mr-1 selectedSize">40</button>
+        <button class="sizes text-gray-600 w-10 h-10 border-2 border-gray-500 rounded-full mr-1">41</button>
+        <button class="sizes text-gray-600 w-10 h-10 border-2 border-gray-500 rounded-full mr-1">42</button>
+      </div>
+      <div>
+        <p class="font-extrabold mb-1">Color</p>
+        <div class="overflow-x-scroll flex scrollHider rounded-full p-1 border-r-2 border-l-2 border-gray-400 color">
+            <div color="white"><ion-icon name="checkmark-outline" class="font-bold text-gray-200 w-9 h-9 border-2 border-gray-500 rounded-full mr-2 bg-gray-200 colors selectedColor"></ion-icon>
+      </div><div color="slate"><ion-icon name="checkmark-outline" class="font-bold text-slate-500 w-9 h-9 border-2 border-gray-500 rounded-full mr-2 bg-slate-500 colors"></ion-icon>
+      </div><div color="purple"><ion-icon name="checkmark-outline" class="font-bold text-purple-600 w-9 h-9 border-2 border-gray-500 rounded-full mr-2 bg-purple-600 colors"></ion-icon>
+      </div><div color="orange"><ion-icon name="checkmark-outline" class="font-bold text-red-400 w-9 h-9 border-2 border-gray-500 rounded-full mr-2 bg-red-400 colors"></ion-icon>
+      </div><div color="blue"><ion-icon name="checkmark-outline" class="font-bold text-blue-500 w-9 h-9 border-2 border-gray-500 rounded-full mr-2 bg-blue-500 colors"></ion-icon>
+      </div><div color="red"><ion-icon name="checkmark-outline" class="font-bold text-red-700 w-9 h-9 border-2 border-gray-500 rounded-full mr-2 bg-red-700 colors"></ion-icon>
+      </div><div color="green"><ion-icon name="checkmark-outline" class="font-bold text-green-700 w-9 h-9 border-2 border-gray-500 rounded-full mr-2 bg-green-700 colors"></ion-icon>
+      </div>
+    </div>
+      </div>
+    </section>
+    <div class="flex border-b-2 pb-3">
+      <p class="font-extrabold mt-2 mr-2">Quantity</p>
+      <div class="grid grid-cols-3 gap-5 font-extrabold bg-gray-100 rounded-full p-2 px-5">
+        <button class="remove">-</button>
+        <span class="quantity">0</span>
+        <button class="add">+</button>
+      </div>
+    </div>
+    <div class="flex justify-between mt-3 pb-2">
+      <div>
+        <p class="text-sm text-gray-600">Total Price</p>
+        <p class="totalPrice font-bold text-xl">$143.00</p>
+      </div>
+      <button class="flex bg-black text-white rounded-full pt-3 px-9 addToCart">
+       <ion-icon name="bag-add" class="mr-1"></ion-icon>Add to Cart
+      </button>
+    </div>
+  </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="Script.js" type="module"></script>
+</body>
+</html>

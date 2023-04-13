@@ -1,8 +1,19 @@
-export function shoeLister() {  
+export function homeFilterLister(){
+    const filterBtns = document.querySelector(`.filterBtns`);
+    filterBtns.addEventListener(`click`, (event) => {
+    if(event.target.classList.contains(`filterBtn`)){
+        document.querySelector(`.selectedFilter`).classList.remove(`selectedFilter`);
+        event.target.classList.add(`selectedFilter`);
+    };
     const shoeList = document.querySelector(`.ShoeList`);
-    axios.get('http://localhost:3000/Shoes',{
-    }).then(res => { 
-        res = res.data; 
+    shoeList.innerHTML=``;
+    let clickedBtn = event.target.innerHTML;
+    let filt = `http://localhost:3000/Shoes?CompanyName=${clickedBtn}`
+    if (clickedBtn == `All`){
+        filt = `http://localhost:3000/Shoes`
+    }
+    axios.get(filt).then(res => { 
+        res = res.data;
         res.forEach(element => {
             let div = document.createElement(`div`);
             div.setAttribute(`onclick`, `productOnClick(event)`);
@@ -13,9 +24,9 @@ export function shoeLister() {
             <span class="text-xl font-bold mb-2 whitespace-nowrap">${element.title}</span>
             <p class="font-bold">$ ${element.price}</p>
             `;
-            
             shoeList.append(div);
-    
         });
     });
+    }
+)   
 }

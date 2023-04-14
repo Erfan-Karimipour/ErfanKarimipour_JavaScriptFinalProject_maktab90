@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe | Home Page</title>
+    <link rel="stylesheet" href="../../../dist/output.css">
+    <link rel="stylesheet" href="../../Style.css">
+    <script src="../../Modules/LoginChecker/LoginChecker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="color.css">
+</head>
+
+<body class="bg-slate-100">
+    <header class="flex justify-between">
+        <div class="flex"><img src="../../Styles/Images/Logo.png" alt="Shoae Logo" class="w-8 h-8 m-4"><p class="font-extrabold text-xl mt-5 text-slate-900">My WishList</p></div>
+        <form action="../SearchPage/Index.html" class="mr-5 mt-5"><button class="text-gray-900 text-2xl"><ion-icon name="search-outline"></ion-icon></button></form>
+    </header>
+
+    <main class="cartNav h-fit justify-around mt-5 overflow-scroll">
+
+    </main>
+
+    <footer class="pt-4 border-t-2 border-t-gray-200 bg-red rounded-t-3xl">
+        <header class="flex justify-between">
+            <div class="ml-5 mt-1">
+                <p class="text-sm text-gray-600">Total price</p>
+                <span class="font-bold text-xl totalPrice"></span>
+            </div>
+            <button class="px-20 py-4 text-sm bg-black text-white rounded-full m-auto mb-4  shadow-sm shadow-black">
+                Checkout <ion-icon name="caret-forward-outline" ></ion-icon>
+            </button>
+        </header>
+        
+        <footer class="grid grid-cols-5 border-t-2 ">
+            <form action="../HomePage/Index.html" class="pt-3 flex justify-center"><button class="flex flex-col">
+                <ion-icon name="home-outline" class="text-3xl m-auto"></ion-icon>
+                <p class="font-bold text-ssm text-center w-full">Home</p>
+            </button></form> 
+            <button class="flex flex-col pt-3">
+                <ion-icon name="bag" class="text-3xl m-auto"></ion-icon>
+                <p class="font-bold text-ssm text-center w-full">Cart</p>
+            </button>
+            <button class="flex flex-col pt-3">
+                <ion-icon name="cart-outline" class="text-3xl m-auto"></ion-icon>
+                <p class="font-bold text-ssm text-center w-full">Orders</p>
+            </button>
+            <button class="flex flex-col pt-3">
+                <ion-icon name="wallet-outline" class="text-3xl m-auto"></ion-icon>
+                <p class="font-bold text-ssm text-center w-full">Wallet</p>
+            </button>
+            <button class="flex flex-col pt-3">
+                <ion-icon name="person-outline" class="text-3xl m-auto"></ion-icon>
+                <p class="font-bold text-ssm text-center w-full">Profile</p>
+            </button>
+        </footer>
+    </footer>
+
+    <section class="absolute w-full h-full bg-black bg-opacity-50 top-0 removing hidden">
+        <div class="bg-gray-100 w-full h-1/2 absolute bottom-0 rounded-t-4xl shadow-3xl shadow-black">
+            <p class="m-7 pb-4 border-b-2 text-center text-2xl font-extrabold">Remove From Cart?</p>
+            <main class="h-48 mt-5 overflow-y-scroll overflow-x-hidden removingCarts">
+
+
+
+            </main>
+            <footer class="border-t-2 mx-7 flex justify-between pt-4">
+                <button class="rounded-full w-40 py-4 bg-gray-300 text-gray-800 cancel">Cancel</button>
+                <button class="rounded-full w-40 py-4 bg-black text-white shadow-sm shadow-black yesRemove">Yes, Remove</button>
+            </footer>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="Script.js" type="module"></script>
+    <script src="../../Modules/ProductOnclick/ProductOnclick.js"></script>
+    <script src="addAndRemove.js"></script>
+</body>
+</html>
+
+
+
+
+
+

@@ -95,10 +95,10 @@
             <ion-icon name="home" class="text-3xl m-auto"></ion-icon>
             <p class="font-bold text-ssm text-center w-full">Home</p>
         </button>
-        <form action="../CartsPage/Index.html" class="pt-3 flex justify-center"><button class="flex flex-col">
+        <button class="pt-3 flex justify-center flex-col cartsIcon">
             <ion-icon name="bag-outline" class="text-3xl m-auto"></ion-icon>
             <p class="font-bold text-ssm text-center w-full">Cart</p>
-        </button></form> 
+        </button>
         <button class="flex flex-col pt-3">
             <ion-icon name="cart-outline" class="text-3xl m-auto"></ion-icon>
             <p class="font-bold text-ssm text-center w-full">Orders</p>
@@ -119,6 +119,11 @@
             <div class="p-3 px-4 grid grid-cols-2 gap-2 gap-y-4 FilteredShoeList">
             </div>
         </div>
+    </section>
+
+    <section class="absolute bottom-16 py-2 px-4 rounded-md cartAlert flex bg-black text-red-500 duration-300">
+        <ion-icon name="alert-circle-outline" class="mr-2 text-2xl"></ion-icon>
+        <p>You don't have any Carts!</p>
     </section>
 
 <div class="hidden">

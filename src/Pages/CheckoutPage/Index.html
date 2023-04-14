@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe | Home Page</title>
+    <link rel="stylesheet" href="../../../dist/output.css">
+    <link rel="stylesheet" href="../../Style.css">
+    <script src="../../Modules/LoginChecker/LoginChecker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="color.css">
+</head>
+<body class="bg-gray-100">
+    <form class="flex justify-between" action="../CartsPage/Index.html">
+        <button class="flex"><ion-icon name="arrow-back-outline" class="w-6 h-6 m-5 mr-2"></ion-icon><p class="font-extrabold text-xl mt-5 text-slate-900">Checkout</p></button>
+        <ion-icon name="ellipsis-horizontal-circle-outline" class="w-7 h-7 m-5 mx-6"></ion-icon>
+    </form>
+
+    <main>
+        <section class="pb-5 border-b-2 mx-6">
+        <p class="text-xl font-extrabold">Shipping Address</p>
+            <div class="flex p-4 mt-2 bg-white rounded-xl shippingAddress">
+                <ion-icon name="location" class="text-3xl bg-black text-white p-2 rounded-full"></ion-icon>
+                <div class="flex justify-between w-10/12">
+                    <div class="ml-4 mt-1">
+                        <p class="font-extrabold text-md">Home</p>
+                        <p class="text-gray-600 text-sm">66012, Tehran, Iran</p>
+                    </div>
+                    <ion-icon name="pencil-outline" class="w-6 h-6 mt-3"></ion-icon>
+                </div>
+            </div>
+        </section>
+        <section>
+            <p class="text-xl font-extrabold mt-3 ml-6 mb-2">Order List</p>
+            <div class="carts">
+
+            </div>
+        </section>
+        <section class="mb-5 border-t-2 mx-6 border-b-2 pb-5">
+            <p class="text-xl font-extrabold mt-3 mb-2 ">Choose Shipping</p>
+            <div class="flex justify-between p-3 px-5 bg-white rounded-xl text-lg">
+                <div class="flex">
+                    <ion-icon name="car" class="mr-2 text-2xl"></ion-icon>
+                    <p>Choose Shipping Type</p>
+                </div>
+                <ion-icon name="chevron-forward-outline" class="mt-1"></ion-icon>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="Script.js" type="module"></script>
+</body>
+</html>

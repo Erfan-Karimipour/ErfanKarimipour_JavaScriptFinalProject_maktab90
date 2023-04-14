@@ -52,3 +52,6 @@
 .rounded-t-4xl{
     border-radius: 3rem 3rem 0 0;
 }
+.cartAlert{
+    left: -100%;
+}

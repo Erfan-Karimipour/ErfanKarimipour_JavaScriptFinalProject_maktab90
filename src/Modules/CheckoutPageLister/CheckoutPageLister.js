@@ -14,8 +14,7 @@ export function checkoutPageLister(){
         </div>
         <div class="mt-2 ml-2">
             <div class="flex overflow-hidden text-xl font-bold">
-                <span class="w-44 mr-2 overflow-hidden text-ellipsis whitespace-nowrap productName">${element.name}</span>
-                <button class="mt-1"><ion-icon name="trash-outline" ></ion-icon></button>
+                <span class="w-48 mr-2 overflow-hidden text-ellipsis whitespace-nowrap productName">${element.name}</span>
             </div>
             <div class="flex text-sm my-2">
                 <p class="w-4 h-4 ${element.color} rounded-full mr-1 border-2"></p> <span class="productColor">${element.color}</span> <p class="mx-2 text-gray-500">|</p>Size = <span class="productSize">&nbsp${element.size}</span>

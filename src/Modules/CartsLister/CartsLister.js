@@ -32,7 +32,7 @@ carts.forEach(element => {
     `
     cartNav.append(div);
     totalPrice += element.price * element.quantity;
-
 });
+localStorage.setItem(`TotalPrice`, JSON.stringify(totalPrice))
 document.querySelector(`.totalPrice`).innerHTML = "$" + totalPrice + ".00";
 }

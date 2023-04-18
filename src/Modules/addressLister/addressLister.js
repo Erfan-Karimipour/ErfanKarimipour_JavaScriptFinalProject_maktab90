@@ -10,13 +10,20 @@ export function addressLister(){
         <ion-icon name="location" class="text-3xl bg-black text-white p-2 rounded-full"></ion-icon>
         <div class="flex justify-between w-10/12">
             <div class="ml-4 mt-1">
-                <p class="font-extrabold text-md">${address.name}</p>
-                <p class="text-gray-600 text-sm">${address.address}</p>
+                <p class="font-extrabold text-md Name">${address.name}</p>
+                <p class="text-gray-600 text-sm Address">${address.address}</p>
             </div>
-            <input type="radio" name="AddressCart" class="w-5 h-5 mt-3 border-2 border-black selectedAddress" onclick="selectAddress(event)">
+            <input type="radio" name="AddressCart" class="w-5 h-5 mt-3 border-2 border-black addressCheck" onclick="selectAddress(event)">
         </div>
         `
         shippingAddresses.append(div);
+
     });
+    shippingAddresses.querySelector(`.addressCheck`).classList.add(`selectedAddress`);
+    shippingAddresses.querySelector(`.selectedAddress`).setAttribute(`checked`, true);
+
+    document.querySelector(`.addressName`).innerHTML = document.querySelector(`.selectedAddress`).parentElement.parentElement.querySelector(`.Name`).innerHTML;
+    document.querySelector(`.addressAddress`).innerHTML = document.querySelector(`.selectedAddress`).parentElement.parentElement.querySelector(`.Address`).innerHTML;
+
 })
 }

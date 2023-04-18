@@ -25,8 +25,8 @@
                 <ion-icon name="location" class="text-3xl bg-black text-white p-2 rounded-full"></ion-icon>
                 <div class="flex justify-between w-10/12">
                     <div class="ml-4 mt-1">
-                        <p class="font-extrabold text-md">Home</p>
-                        <p class="text-gray-600 text-sm">66012, Tehran, Iran</p>
+                        <p class="font-extrabold text-md addressName">Home</p>
+                        <p class="text-gray-600 text-sm addressAddress">66012, Tehran, Iran</p>
                     </div>
                     <ion-icon name="pencil-outline" class="w-6 h-6 mt-3"></ion-icon>
                 </div>
@@ -50,7 +50,9 @@
         </section>
         <section>
             <p class="text-xl font-extrabold mt-3 ml-6 mb-2">Promo Code</p>
-            <div class="flex w-full justify-center">
+            <p class="bg-black text-white py-2 px-4 w-fit rounded-full ml-5 hidden">Discount <span class="howMuchOff">30</span>% off <ion-icon name="close-outline" class="font-bold align-text-bottom text-xl removePromo"></ion-icon></p>
+            <div class="flex w-full justify-center promoBox">
+
                 <input type="text" placeholder="Enter Promo Code" class="bg-gray-200 border-0 p-4 rounded-2xl h-12 promoCode w-9/12 mr-1 text-sm">
                 <button class="text-5xl text-white bg-black w-14 h-14 rounded-full text-center pt-1 promoCodeBtn">+</button>
             </div>

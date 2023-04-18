@@ -7,6 +7,7 @@ import { shippingShowAndHide } from "../../Modules/shippingShowAndHide/shippingS
 import { dateMaker } from "../../Modules/dateMaker/dateMaker.js";
 import { shippingPrice } from "../../Modules/ShippingPrice/ShippingPrice.js";
 import { shouldPayShippingAdder } from "../../Modules/shouldPayShippingAdder/shouldPayShippingAdder.js";
+import { promoCodeAdder } from "../../Modules/PromoCodeAdder/PromoCodeAdder.js";
 
 checkoutPageLister();
 addNewAddress();
@@ -17,39 +18,21 @@ shippingShowAndHide();
 dateMaker();
 shippingPrice();
 shouldPayShippingAdder();
+promoCodeAdder();
 
+const removePromo = document.querySelector(`.removePromo`);
+removePromo.addEventListener(`click`, () => {
 
-const promoCodeBtn = document.querySelector(`.promoCodeBtn`);
+    let howMuchOff = document.querySelector(`.howMuchOff`);
+    let promoBox = document.querySelector(`.promoBox`);
 
-promoCodeBtn.addEventListener(`click`, () => {
-
-    let promoCode = document.querySelector(`.promoCode`).value;
-    const shouldPay = document.querySelector(`.shouldPay`);
-    let off = document.querySelector(`.off`);
-
-    switch (promoCode){
-        case `Golden`: 
-            shouldPay.innerHTML = Math.trunc( shouldPay.innerHTML - (shouldPay.innerHTML/100)*30 ) ;
-            off.innerHTML = Math.trunc(( shouldPay.innerHTML/100)*30 );
-            off.parentElement.parentElement.classList.remove(`hidden`);
-            break;
-        case `Silver`: 
-            shouldPay.innerHTML = Math.trunc( shouldPay.innerHTML - (shouldPay.innerHTML/100)*10 ) ;
-            off.innerHTML = Math.trunc(( shouldPay.innerHTML/100)*20 );
-            off.parentElement.parentElement.classList.remove(`hidden`);
-            break;
-        case `Bronze`: 
-            shouldPay.innerHTML = Math.trunc( shouldPay.innerHTML - (shouldPay.innerHTML/100)*20 ) ;
-            off.innerHTML = Math.trunc(( shouldPay.innerHTML/100)*10 );
-            off.parentElement.parentElement.classList.remove(`hidden`);
-            break;
-        case `Shit`: 
-            shouldPay.innerHTML = shouldPay.innerHTML * 2 ;
-            off.innerHTML = "(-" + shouldPay.innerHTML/2 + ")" ;
-            off.parentElement.parentElement.classList.remove(`hidden`);
-            break;
-    }
+    document.querySelector(`.shouldPay`).innerHTML = document.querySelector(`.amount`).innerHTML - (-document.querySelector(`.price`).innerHTML);
+    promoBox.classList.remove(`hidden`);
+    howMuchOff.parentElement.classList.add(`hidden`);
+    document.querySelector(`.off`).parentElement.parentElement.classList.add(`hidden`);
+    document.querySelector(`.promoCode`).value = ``;
 })
+
 
 
 // const promoCodeBtn = document.querySelector(`.promoCodeBtn`);

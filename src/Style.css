@@ -20,11 +20,17 @@
 .text-ssm{
     font-size: 10px;
 }
+.text-msm{
+    font-size: 14px;
+}
 .w-shoeImg{
     height: 11rem;
 }
 .FilteredShoeListNav{
     height: 50rem;
+}
+.orderListNav{
+    height: 41rem;
 }
 .FilterPage{
     top: -100%;

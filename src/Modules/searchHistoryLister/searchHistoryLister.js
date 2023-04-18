@@ -10,4 +10,21 @@ export function searchHistoryLister(){
         <ion-icon name="close-outline" class="p-1 border-2 border-gray-500 rounded-xl remove"></ion-icon>`
         searchHistory.append(div);
     });
+    searchHistory.addEventListener(`click`, (event) => {
+
+        if(event.target.classList.contains(`remove`)){
+
+            let history = JSON.parse(localStorage.getItem(`History`));
+            history.forEach(element => {
+                if(element == event.target.parentElement.querySelector(`.oldSearch`).innerHTML){
+                    console.log(`jj`);  
+                    let index = history.indexOf(element, 0);
+                    history.splice(index, 1);
+                    localStorage.setItem(`History`, JSON.stringify(history));
+                    location.reload();
+                }
+            });
+            
+        }
+    })
 }

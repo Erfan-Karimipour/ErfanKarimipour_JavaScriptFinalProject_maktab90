@@ -78,7 +78,7 @@
             </div>
         </section>
         <section class="pt-4 border-t-2 mx-5 mt-6 mb-4">
-            <button class="w-full h-14 rounded-full font-bold bg-black shadow-md shadow-black text-white">
+            <button class="w-full h-14 rounded-full font-bold bg-black shadow-md shadow-black text-white continue">
                 Continue to Payment 
             </button>
         </section>
@@ -173,18 +173,104 @@
             </div>
             
         </main>
-
-
-
         <section class="shippingBack absolute bottom-0 w-11/12 pt-4 border-t-2 mx-5 mt-6 mb-4">
             <button class="w-full h-14 rounded-full font-bold bg-black shadow-sm shadow-black text-white">
                 Apply
             </button>
         </section>
-
     </section>
 
+    <section class="paymentMethods left-100 absolute w-full h-full top-0 bg-gray-100 duration-200">
+        <header class="flex justify-between">
+            <button class="flex paymentBack"><ion-icon name="arrow-back-outline" class="w-6 h-6 m-5 mr-2"></ion-icon><p class="font-extrabold text-xl mt-5 text-slate-900">Payment Methods</p></button><ion-icon name="add-outline" class="w-6 h-6 m-5 mr-4 border-black border-2 rounded-xl"></ion-icon>
+        </header>
+        <main class="mx-6 mb-4">
+            <p class="text-sm my-2">Select the payment method you want to use.</p>
+            <div class="flex p-4 mt-2 mb-3 bg-white rounded-xl">
+                <ion-icon name="card" class="text-3xl bg-black text-white p-2 rounded-full"></ion-icon>
+                <div class="flex justify-between w-11/12">
 
+                    <p class="ml-4 mt-3 font-extrabold text-lg">My Wallet</p>
+
+                    <div class="font-bold">
+                        $<span class="price">2</span>.39
+                        <input type="radio" name="ShippingCart" class="w-5 h-5 mt-3 border-2 border-black" onclick="selectPayment(event)">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex p-4 mt-2 mb-3 bg-white rounded-xl">
+                <ion-icon name="logo-paypal" class="text-3xl bg-black text-white p-2 rounded-full"></ion-icon>
+                <div class="flex justify-between w-11/12">
+
+                    <p class="ml-4 mt-3 font-extrabold text-lg">PayPal</p>
+
+                    <div class="font-bold">
+                        <input type="radio" name="ShippingCart" class="w-5 h-5 mt-3 border-2 border-black" onclick="selectPayment(event)">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex p-4 mt-2 mb-3 bg-white rounded-xl">
+                <ion-icon name="logo-google" class="text-3xl bg-black text-white p-2 rounded-full"></ion-icon>
+                <div class="flex justify-between w-11/12">
+
+                    <p class="ml-4 mt-3 font-extrabold text-lg">Google Pay</p>
+
+                    <div class="font-bold">
+                        <input type="radio" name="ShippingCart" class="w-5 h-5 mt-3 border-2 border-black" onclick="selectPayment(event)">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex p-4 mt-2 mb-3 bg-white rounded-xl">
+                <ion-icon name="logo-apple" class="text-3xl bg-black text-white p-2 rounded-full"></ion-icon>
+                <div class="flex justify-between w-11/12">
+
+                    <p class="ml-4 mt-3 font-extrabold text-lg">Apple Pay</p>
+
+                    <div class="font-bold">
+                        <input type="radio" name="ShippingCart" class="w-5 h-5 mt-3 border-2 border-black" onclick="selectPayment(event)">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex p-4 mt-2 mb-3 bg-white rounded-xl">
+                <ion-icon name="logo-mastodon" class="text-3xl bg-black text-white p-2 rounded-full"></ion-icon>
+                <div class="flex justify-between w-11/12">
+
+                    <p class="ml-4 mt-3 font-extrabold text-lg">Master Cart</p>
+
+                    <div class="font-bold">
+                        <input type="radio" name="ShippingCart" class="w-5 h-5 mt-3 border-2 border-black" onclick="selectPayment(event)">
+                    </div>
+                </div>
+            </div>
+    
+        </main>
+        <section class="addressBack pt-4 border-t-2 mx-5 mt-52 mb-4">
+            <button class="w-full h-14 rounded-full confirmPayment font-bold bg-black shadow-sm shadow-black text-white">
+                Confirm Payment
+            </button>
+        </section>
+    </section>
+
+    <section class="absolute left-100 bottom-24 py-2 px-4 rounded-md paymentAlert flex bg-black text-red-500 duration-300">
+        <ion-icon name="alert-circle-outline" class="mr-2 text-2xl"></ion-icon>
+        <p>Please Select A Payment Method</p>
+    </section>
+
+    <section class="w-full h-full orderSuccessful absolute bg-black bg-opacity-50 top-0 hidden">
+        <div class="absolute bg-white w-10/12 p-6 rounded-3xl success">
+            <img src="../../Styles/Images/success.png" alt="Order successful!" class="w-52 m-auto">
+            <p class="font-bold text-xl text-center mt-4 mb-3">Order Successful!</p>
+            <p class="text-center text-sm mb-7">You have successfully made an order</p>
+            <form action="../OrderPage/Index.html"><button class="text-white bg-black rounded-full w-full font-bold py-4">View Order</button></form>
+            <button class="text-gray-700 bg-gray-300 rounded-full w-full font-bold py-4 mt-3">View E-Receipt</button>
+        </div>
+    </section>
+
+    <script src="selectPayment.js"></script>
     <script src="selectShipping.js"></script>
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <script src="selectAddress.js"></script>

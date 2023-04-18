@@ -8,6 +8,10 @@ import { dateMaker } from "../../Modules/dateMaker/dateMaker.js";
 import { shippingPrice } from "../../Modules/ShippingPrice/ShippingPrice.js";
 import { shouldPayShippingAdder } from "../../Modules/shouldPayShippingAdder/shouldPayShippingAdder.js";
 import { promoCodeAdder } from "../../Modules/PromoCodeAdder/PromoCodeAdder.js";
+import { removePromo } from "../../Modules/RemovePromo/RemovePromo.js";
+import { paymentOpen } from "../../Modules/PaymentOpen/PaymentOpen.js";
+import { paymentClose } from "../../Modules/PaymentClose/PaymentClose.js";
+import { confirmPayment } from "../../Modules/ConfirmPayment/ConfirmPayment.js";
 
 checkoutPageLister();
 addNewAddress();
@@ -19,27 +23,7 @@ dateMaker();
 shippingPrice();
 shouldPayShippingAdder();
 promoCodeAdder();
-
-const removePromo = document.querySelector(`.removePromo`);
-removePromo.addEventListener(`click`, () => {
-
-    let howMuchOff = document.querySelector(`.howMuchOff`);
-    let promoBox = document.querySelector(`.promoBox`);
-
-    document.querySelector(`.shouldPay`).innerHTML = document.querySelector(`.amount`).innerHTML - (-document.querySelector(`.price`).innerHTML);
-    promoBox.classList.remove(`hidden`);
-    howMuchOff.parentElement.classList.add(`hidden`);
-    document.querySelector(`.off`).parentElement.parentElement.classList.add(`hidden`);
-    document.querySelector(`.promoCode`).value = ``;
-})
-
-
-
-// const promoCodeBtn = document.querySelector(`.promoCodeBtn`);
-// promoCodeBtn.addEventListener(`click`, () => {
-//     let promoCode = document.querySelector(`.promoCode`);
-//     switch(promoCode){
-//         case `Gold`: 
-//     }
-// })
-
+removePromo();
+paymentOpen();
+paymentClose();
+confirmPayment();

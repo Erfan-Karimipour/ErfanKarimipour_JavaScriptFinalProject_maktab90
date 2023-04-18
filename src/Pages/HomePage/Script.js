@@ -6,6 +6,7 @@ import { searchBar } from "../../Modules/SearchBar/SearchBar.js";
 import { closer } from "../../Modules/Closer/Closer.js";
 import { searcher} from "../../Modules/Searcher/Searcher.js";
 import { homeFilterLister } from "../../Modules/HomaFilterLister/HomeFilterLister.js";
+import { cartsChecker } from "../../Modules/CartsChecker/CartsChecker.js";
 
 shoeLister();
 closeFilter();
@@ -15,16 +16,10 @@ searchBar();
 closer();
 searcher();
 homeFilterLister();
+cartsChecker();
 
-const cartsIcon = document.querySelector(`.cartsIcon`);
-cartsIcon.addEventListener(`click`, () => {
-    let carts = JSON.parse(localStorage.getItem(`Carts`))
-    if ( carts != null && carts.length != 0) {
-        window.open(`../CartsPage/Index.html`, `_self`);
-    } else {
-        document.querySelector(`.cartAlert`).style.left = "-2%"
-        setTimeout(() => {
-            document.querySelector(`.cartAlert`).style.left = "-100%"
-        }, 2000)
-    }
+
+const ordersIcon = document.querySelector(`.ordersIcon`);
+ordersIcon.addEventListener(`click`, () => {
+    window.open(`../OrderPage/Index.html`, `_self`);
 })

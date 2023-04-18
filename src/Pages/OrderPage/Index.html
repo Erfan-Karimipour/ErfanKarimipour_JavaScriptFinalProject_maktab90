@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe | Home Page</title>
+    <link rel="stylesheet" href="../../../dist/output.css">
+    <link rel="stylesheet" href="../../Style.css">
+    <link rel="stylesheet" href="color.css">
+    <script src="../../Modules/LoginChecker/LoginChecker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+
+<body class="bg-slate-100">
+    <header class="flex justify-between">
+        <div class="flex"><img src="../../Styles/Images/Logo.png" alt="Shoae Logo" class="w-8 h-8 m-4"><p class="font-extrabold text-xl mt-5 text-slate-900">My Orders</p></div>
+        <form action="../SearchPage/Index.html" class="mr-5 mt-5"><button class="text-gray-900 text-2xl"><ion-icon name="search-outline"></ion-icon><ion-icon name="ellipsis-horizontal-circle-outline" class="ml-4"></ion-icon></button></form>
+    </header>
+
+    <section class="grid grid-cols-2 mx-6 text-center font-bold status">
+        <button class="py-2 text-black border-b-4 border-black selectedStatus" name="Active">
+            Active
+        </button>
+        <button class="py-2 text-gray-400 border-b-2 border-gray-300" name="Completed">
+            Completed
+        </button>
+    </section>
+
+    <main class="activeNav justify-around mt-5 overflow-scroll orderListNav">
+
+        <div class="absolute absoluteCenter w-full activenotFound">
+            <p class="flex justify-around">
+            <img src="https://img.icons8.com/dotty/80/null/terms-and-conditions.png" class="flex justify-around w-60"/></p>
+            <p class="text-xl font-extrabold flex justify-around m-2">You don't have an order yet</p>
+            <p class="flex justify-around text-center">You don't have an active order at this time</p>
+        </div>
+
+    </main>
+
+    <main class="completedNav h-fit justify-around mt-5 overflow-scroll hidden">
+
+        <div class="absolute absoluteCenter w-full completednotFound">
+            <p class="flex justify-around">
+            <img src="https://img.icons8.com/dotty/80/null/terms-and-conditions.png" class="flex justify-around w-60"/></p>
+            <p class="text-xl font-extrabold flex justify-around m-2">You don't have an order yet</p>
+            <p class="flex justify-around text-center">You don't have a completed order at this time</p>
+        </div>
+
+    </main>
+
+
+
+    <footer class="grid grid-cols-5 w-full border-t-2 absolute bottom-0 bg-gray-100">
+        <form action="../HomePage/Index.html" class="pt-3 flex justify-center"><button class="flex flex-col">
+            <ion-icon name="home-outline" class="text-3xl m-auto"></ion-icon>
+            <p class="font-bold text-ssm text-center w-full">Home</p>
+        </button></form> 
+        <form action="../CartsPage/Index.html" class="pt-3 flex justify-center"><button class="flex flex-col">
+            <ion-icon name="bag-outline" class="text-3xl m-auto"></ion-icon>
+            <p class="font-bold text-ssm text-center w-full">Carts</p>
+        </button></form> 
+        <button class="flex flex-col pt-3">
+            <ion-icon name="cart" class="text-3xl m-auto"></ion-icon>
+            <p class="font-bold text-ssm text-center w-full">Orders</p>
+        </button>
+        <button class="flex flex-col pt-3">
+            <ion-icon name="wallet-outline" class="text-3xl m-auto"></ion-icon>
+            <p class="font-bold text-ssm text-center w-full">Wallet</p>
+        </button>
+        <button class="flex flex-col pt-3">
+            <ion-icon name="person-outline" class="text-3xl m-auto"></ion-icon>
+            <p class="font-bold text-ssm text-center w-full">Profile</p>
+        </button>
+    </footer>
+
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="Script.js" type="module"></script>
+    <script src="../../Modules/ProductOnclick/ProductOnclick.js"></script>
+</body>
+</html>
+
+
+
+
+
+

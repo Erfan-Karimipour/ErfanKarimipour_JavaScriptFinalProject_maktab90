@@ -5,3 +5,8 @@ import { removeCartOptions } from '../../Modules/RemoveCartOptions/RemoveCartOpt
 cartsLister();
 removeCartLister();
 removeCartOptions();
+
+const ordersIcon = document.querySelector(`.ordersIcon`);
+ordersIcon.addEventListener(`click`, () => {
+    window.open(`../OrderPage/Index.html`, `_self`);
+})

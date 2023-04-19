@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="../../Style.css">
     <link rel="stylesheet" href="color.css">
+    <link rel="stylesheet" href="../../media.css">
 </head>
 <body>
 <section class="bg-gray-100 home">
@@ -25,8 +26,8 @@
                 <ion-icon name="location" class="text-3xl bg-black text-white p-2 rounded-full"></ion-icon>
                 <div class="flex justify-between w-10/12">
                     <div class="ml-4 mt-1">
-                        <p class="font-extrabold text-md addressName">Home</p>
-                        <p class="text-gray-600 text-sm addressAddress">66012, Tehran, Iran</p>
+                        <p class="font-extrabold text-md addressName">Add Address</p>
+                        <p class="text-gray-600 text-sm addressAddress">________________</p>
                     </div>
                     <ion-icon name="pencil-outline" class="w-6 h-6 mt-3"></ion-icon>
                 </div>
@@ -78,7 +79,7 @@
             </div>
         </section>
         <section class="pt-4 border-t-2 mx-5 mt-6 mb-4">
-            <button class="w-full h-14 rounded-full font-bold bg-black shadow-md shadow-black text-white continue">
+            <button class="w-full h-14 rounded-full font-bold bg-black shadow-md shadow-black text-white continue mb-4">
                 Continue to Payment 
             </button>
         </section>
@@ -102,7 +103,7 @@
             </div>
         </footer>
 
-        <section class="addressBack pt-4 border-t-2 mx-5 mt-6 mb-4">
+        <section class="addressBack pt-4 border-t-2 mx-5 mt-6 mb-4 absolute bottom-0 w-11/12">
             <button class="w-full h-14 rounded-full font-bold bg-black shadow-sm shadow-black text-white">
                 Apply
             </button>
@@ -123,7 +124,7 @@
                         <p class="font-extrabold text-md">Economy</p>
                         <p class="text-gray-600 text-msm">Estimated Arrival, <span id="Economy"></span></p>
                     </div>
-                    <div class="font-bold">
+                    <div class="font-bold text-s">
                         $<span class="price">10</span>.00
                         <input type="radio" name="ShippingCart" class="w-5 h-5 mt-3 border-2 border-black selectShipping" checked onclick="selectShipping(event)">
                     </div>
@@ -137,7 +138,7 @@
                         <p class="font-extrabold text-md">Regular</p>
                         <p class="text-gray-600 text-msm">Estimated Arrival, <span id="Regular"></span></p>
                     </div>
-                    <div class="font-bold">
+                    <div class="font-bold text-s">
                         $<span>15</span>.00
                         <input type="radio" name="ShippingCart" class="w-5 h-5 mt-3 border-2 border-black" onclick="selectShipping(event)">
                     </div>
@@ -151,7 +152,7 @@
                         <p class="font-extrabold text-md">Cargo</p>
                         <p class="text-gray-600 text-msm">Estimated Arrival, <span id="Cargo"></span></p>
                     </div>
-                    <div class="font-bold">
+                    <div class="font-bold text-s">
                         $<span>20</span>.00
                         <input type="radio" name="ShippingCart" class="w-5 h-5 mt-3 border-2 border-black" onclick="selectShipping(event)">
                     </div>
@@ -165,7 +166,7 @@
                         <p class="font-extrabold text-md">Express</p>
                         <p class="text-gray-600 text-msm">Estimated Arrival, <span id="Express"></span></p>
                     </div>
-                    <div class="font-bold">
+                    <div class="font-bold text-s">
                         $<span>30</span>.00
                         <input type="radio" name="ShippingCart" class="w-5 h-5 mt-3 border-2 border-black" onclick="selectShipping(event)">
                     </div>
@@ -173,7 +174,7 @@
             </div>
             
         </main>
-        <section class="shippingBack absolute bottom-0 w-11/12 pt-4 border-t-2 mx-5 mt-6 mb-4">
+        <section class="shippingBack absolute bottom-4 w-11/12 pt-4 border-t-2 mx-5 mt-6 mb-4">
             <button class="w-full h-14 rounded-full font-bold bg-black shadow-sm shadow-black text-white">
                 Apply
             </button>

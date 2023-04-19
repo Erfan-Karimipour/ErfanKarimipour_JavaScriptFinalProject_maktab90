@@ -633,153 +633,42 @@
   ],
   "Accounts": [
     {
-      "Email": "@E",
+      "Email": "@",
       "Password": "@",
       "Orders": [
         {
           "status": "In Delivery",
           "data": [
             {
-              "user": "@E",
-              "id": "18",
-              "price": 593,
-              "quantity": 1,
-              "color": "white",
-              "size": "41",
-              "img": "https://www.freeiconspng.com/uploads/boat-shoes-and-sandals-png-2.png",
-              "name": "Tasty Steel Car"
-            },
-            {
-              "user": "@E",
-              "id": "14",
-              "price": 534,
+              "user": "@",
+              "id": "41",
+              "price": 41,
               "quantity": 1,
               "color": "slate",
               "size": "42",
-              "img": "https://www.freeiconspng.com/uploads/green-running-shoes-png-24.png",
-              "name": "Green Ronaldo Shoes"
-            }
-          ]
-        },
-        {
-          "status": "In Delivery",
-          "data": [
-            {
-              "user": "@E",
-              "id": "47",
-              "price": 904,
-              "quantity": 1,
-              "color": "purple",
-              "size": "42",
-              "img": "https://www.freeiconspng.com/uploads/boat-shoes-and-sandals-png-2.png",
-              "name": "Elegant Metal Towels"
+              "img": "https://www.freeiconspng.com/uploads/green-asics-running-shoes-png-image-4.png",
+              "name": "Recycled Wooden Pants"
             },
             {
-              "user": "@E",
-              "id": "104",
-              "price": 28,
-              "quantity": 2,
-              "color": "green",
-              "size": "41",
-              "img": "https://www.freeiconspng.com/uploads/green-running-shoes-png-24.png",
-              "name": "Intelligent Soft Pizza"
-            }
-          ]
-        },
-        {
-          "status": "In Delivery",
-          "data": [
-            {
-              "user": "@E",
-              "id": "69",
-              "price": 253,
-              "quantity": 1,
-              "color": "red",
-              "size": "41",
-              "img": "https://www.freeiconspng.com/uploads/green-asics-running-shoes-png-image-4.png",
-              "name": "Generic Metal Ball"
-            }
-          ]
-        },
-        {
-          "status": "In Delivery",
-          "data": [
-            {
-              "user": "@E",
-              "id": "14",
-              "price": 534,
-              "quantity": 2,
-              "color": "green",
-              "size": "42",
-              "img": "https://www.freeiconspng.com/uploads/green-running-shoes-png-24.png",
-              "name": "Green Ronaldo Shoes"
-            }
-          ]
-        },
-        {
-          "status": "In Delivery",
-          "data": [
-            {
-              "user": "@E",
-              "id": "101",
-              "price": 595,
-              "quantity": 3,
-              "color": "blue",
-              "size": "42",
-              "img": "https://www.freeiconspng.com/uploads/boat-shoes-and-sandals-png-2.png",
-              "name": "Awesome Rubber Cheese"
-            }
-          ]
-        },
-        {
-          "status": "In Delivery",
-          "data": [
-            {
-              "user": "@E",
+              "user": "@",
               "id": "44",
               "price": 67,
-              "quantity": 1,
-              "color": "slate",
-              "size": "40",
+              "quantity": 4,
+              "color": "green",
+              "size": "42",
               "img": "https://www.freeiconspng.com/uploads/nike-women-running-shoes-png-image-6.png",
               "name": "Sleek Wooden Car"
-            }
-          ]
-        },
-        {
-          "status": "In Delivery",
-          "data": [
-            {
-              "user": "@E",
-              "id": "71",
-              "price": 118,
-              "quantity": 1,
-              "color": "purple",
-              "size": "41",
-              "img": "https://www.freeiconspng.com/uploads/nike-women-running-shoes-png-image-6.png",
-              "name": "Gorgeous Rubber Sausages"
             }
           ]
         }
       ],
       "Addresses": [
         {
-          "name": "Home",
-          "address": "jesus land"
-        },
-        {
-          "name": "Home 2",
-          "address": "Hellish Isles, Northrend"
+          "name": "Teh",
+          "address": "Jesus Land of south Italy"
         }
       ],
       "id": 1
-    },
-    {
-      "Email": "@E",
-      "Password": "@",
-      "Orders": [],
-      "Addresses": [],
-      "id": 2
     }
   ]
 }

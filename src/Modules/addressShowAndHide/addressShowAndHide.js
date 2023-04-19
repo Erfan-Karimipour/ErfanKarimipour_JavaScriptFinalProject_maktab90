@@ -11,7 +11,7 @@ shippingAddress.addEventListener(`click`, () => {
 document.querySelector(`.addressChoose`).addEventListener(`click`, (event) => {
     if(event.target.parentElement.classList.contains(`addressBack`)){
     document.querySelector(`.home`).classList.toggle(`hidden`);
-    document.querySelector(`.addressChoose`).style.left = "-100%";
+    document.querySelector(`.addressChoose`).style.left = "-150%";
 }
 })
 }

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="color.css">
     <script src="../../Modules/LoginChecker/LoginChecker.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="../../media.css">
 </head>
 
 <body class="bg-slate-100">
@@ -56,10 +57,10 @@
             <ion-icon name="home-outline" class="text-3xl m-auto"></ion-icon>
             <p class="font-bold text-ssm text-center w-full">Home</p>
         </button></form> 
-        <form action="../CartsPage/Index.html" class="pt-3 flex justify-center"><button class="flex flex-col">
+        <button class="flex flex-col pt-3 justify-center cartsIcon">
             <ion-icon name="bag-outline" class="text-3xl m-auto"></ion-icon>
             <p class="font-bold text-ssm text-center w-full">Carts</p>
-        </button></form> 
+        </button>
         <button class="flex flex-col pt-3">
             <ion-icon name="cart" class="text-3xl m-auto"></ion-icon>
             <p class="font-bold text-ssm text-center w-full">Orders</p>
@@ -73,6 +74,11 @@
             <p class="font-bold text-ssm text-center w-full">Profile</p>
         </button>
     </footer>
+
+    <section class="absolute bottom-16 py-2 px-4 rounded-md cartAlert flex bg-black text-red-500 duration-300">
+        <ion-icon name="alert-circle-outline" class="mr-2 text-2xl"></ion-icon>
+        <p>You don't have any Carts!</p>
+    </section>
 
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
